@@ -16,7 +16,3 @@ class Author
   end
 end
 
-# author = Author.new("David", "Igbo")
-# book = Book.new("Unlimited Resources")
-
-# author.add_book(book)
