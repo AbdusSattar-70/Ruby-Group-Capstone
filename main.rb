@@ -47,8 +47,8 @@ class Main
 end
 
 def main
-  app = Main.new
-  app.run_app
+  main = Main.new
+  main.run_app
 end
 
 main
