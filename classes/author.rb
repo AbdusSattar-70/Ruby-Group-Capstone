@@ -15,4 +15,3 @@ class Author
     book.author = self
   end
 end
-
