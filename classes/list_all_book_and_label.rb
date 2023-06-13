@@ -99,7 +99,7 @@ class BookLabelAddAndShow
 
   def display_message(message)
     puts '-------------------------------------------'
-    puts message
+    puts message.chomp
     puts '-------------------------------------------'
   end
 end
