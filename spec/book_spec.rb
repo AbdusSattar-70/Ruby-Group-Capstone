@@ -3,7 +3,7 @@ require 'date'
 
 describe Book do
   before :each do
-    @book = Book.new('2023-01-01', 'Example Publisher', 'good')
+    @book = Book.new('2023-01-01', 'Example Publisher', 'good', 'hello world')
   end
 
   describe '#initialize' do
@@ -17,7 +17,7 @@ describe Book do
   describe '#move_to_archive' do
     context 'when the cover state is bad' do
       before do
-        @book = Book.new('2023-01-01', 'Example Publisher', 'bad')
+        @book = Book.new('2023-01-01', 'Example Publisher', 'bad', 'hello world')
       end
 
       it 'marks the book as archived' do
