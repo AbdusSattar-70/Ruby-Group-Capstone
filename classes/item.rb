@@ -1,3 +1,5 @@
+require 'date'
+
 class Item
   attr_reader :id, :genre, :author, :label
   attr_accessor :publish_date
@@ -24,5 +26,6 @@ class Item
 
   def move_to_archive
     @archived = can_be_archived?
+
   end
 end
