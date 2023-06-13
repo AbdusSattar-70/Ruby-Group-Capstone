@@ -7,3 +7,5 @@ describe Item do
     expect(item.publish_date).to eq('2020-01-01')
   end
 end
+
+# Path: Ruby-Group-Capstone\spec\item_spec.rb
