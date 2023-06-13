@@ -34,5 +34,5 @@ CREATE TABLE AUTHOR (
   first_name VARCHAR(50) NOT NULL,
   last_name VARCHAR(50) NOT NULL,
   author_id INT,
-  FOREIGN KEY (game_id) REFERENCES item(id) ON DELETE CASCADE
+  FOREIGN KEY (auothor_id) REFERENCES item(id) ON DELETE CASCADE
 );
