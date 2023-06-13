@@ -4,7 +4,7 @@ require 'json'
 require 'date'
 require 'fileutils'
 
-class ListBook
+class BookLabelAddAndShow
   attr_accessor :books, :labels
 
   def initialize
@@ -22,7 +22,7 @@ class ListBook
     display_message('Enter the publisher of the book: ')
     publisher = gets.chomp
 
-    cover_state = prompt_cover_state
+    cover_state = get_cover_state
 
     book = Book.new(publish_date, publisher, cover_state)
     label = Label.new(title, color)
@@ -33,7 +33,7 @@ class ListBook
     store_label(label)
   end
 
-  def prompt_cover_state
+  def get_cover_state
     loop do
       display_message('Enter the cover state of the book (GOOD or BAD): ')
       cover_state = gets.chomp.upcase
