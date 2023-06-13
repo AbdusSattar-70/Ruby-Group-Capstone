@@ -1,5 +1,3 @@
-require_relative './music_album'
-
 class Genre
   attr_reader :id
   attr_accessor :name, :items
@@ -11,7 +9,9 @@ class Genre
   end
 
   def add_item(item)
+    return if item.genre == self
+
     @items << item
-    item.genre << self
+    item.genre = self
   end
 end
