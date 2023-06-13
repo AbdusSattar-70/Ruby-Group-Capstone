@@ -24,6 +24,5 @@ class Item
 
   def move_to_archive
     @archived = can_be_archived?
-
   end
 end
