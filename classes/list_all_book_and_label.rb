@@ -24,7 +24,7 @@ class BookLabelAddAndShow
 
     cover_state = input_cover_state
 
-    book = Book.new(publish_date, publisher, cover_state)
+    book = Book.new(publish_date, publisher, cover_state, title)
     label = Label.new(title, color)
     @books.push(book)
     @labels.push(label)
@@ -46,6 +46,7 @@ class BookLabelAddAndShow
   def store_book(book)
     hash = {
       id: book.id,
+      title: book.title,
       publisher: book.publisher,
       publish_date: book.publish_date,
       cover_state: book.cover_state
@@ -97,6 +98,8 @@ class BookLabelAddAndShow
   private
 
   def display_message(message)
+    puts '-------------------------------------------'
     puts message
+    puts '-------------------------------------------'
   end
 end
