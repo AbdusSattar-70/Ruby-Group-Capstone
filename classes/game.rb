@@ -2,16 +2,15 @@
 
 class Game
     attr_reader :multiplayer, :last_played_at
-    
-
-    def multiplayer=(multiplayer)
-        @multiplayer = multiplayer
-        multiplayer.add_game(self) unless multiplayer.add_game.include?(self)
+  
+    def initialize(last_played_at, multiplayer)
+      @last_played_at = last_played_at
+      self.multiplayer = multiplayer
     end
-
-    def last_played_at=(last_played_at)
-        @last_played_at = last_played_at
-        last_played_at.add_game(self) unless last_played_at.add_game.include?(self)
+  
+    def multiplayer=(multiplayer)
+      @multiplayer = multiplayer
+      multiplayer.add_game(self) unless multiplayer.games.include?(self)
     end
 
     private
