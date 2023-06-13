@@ -6,12 +6,7 @@ class Game < Item
   def initialize(publish_date, last_played_at, multiplayer)
     super(publish_date)
     @last_played_at = last_played_at
-    self.multiplayer = multiplayer
-  end
-
-  def multiplayer=(multiplayer)
     @multiplayer = multiplayer
-    multiplayer.add_game(self) unless multiplayer.games.include?(self)
   end
 
   private
