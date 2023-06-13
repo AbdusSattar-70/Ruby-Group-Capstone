@@ -2,7 +2,7 @@ require_relative '../classes/label'
 
 describe Label do
   before :each do
-    @item = instance_double("Item")
+    @item = instance_double('Item')
     @label = Label.new('Example Label', 'blue')
   end
 

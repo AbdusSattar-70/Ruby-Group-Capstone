@@ -82,7 +82,8 @@ class ListBook
   def list_all_books
     @books = load_json('data/books.json')
     @books.each do |book|
-      display_message("Book Title: #{book['title']}, Publisher: #{book['publisher']}, Publish Date: #{book['publish_date']}, Cover State: #{book['cover_state']}")
+      display_message("Book Title: #{book['title']}, Publisher: #{book['publisher']},
+        Publish Date: #{book['publish_date']}, Cover State: #{book['cover_state']}")
     end
   end
 
