@@ -1,6 +1,6 @@
-require_relative 'book'
+require_relative 'item'
 
-class Author
+class Author < Item
   attr_reader :id, :first_name, :last_name, :books
 
   def initialize(first_name, last_name)
