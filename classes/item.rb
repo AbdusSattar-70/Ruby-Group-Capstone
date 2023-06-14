@@ -16,7 +16,7 @@ class Item
 
   def author=(author)
     @author = author
-    author.add_item(self) unless author.add_item.include?(self)
+    author.add_item(self) unless author.items.include?(self)
   end
 
   def label=(label)
@@ -31,12 +31,12 @@ class Item
   private
 
   def can_be_archived?
-    current_year = Time.now.year
-    publish_year = Date.parse(@publish_date.to_s).year
-    archived = current_year - publish_year
-    archived > 10
-  end
-  
+  current_year = Time.now.year
+  publish_year = Date.parse(@publish_date.to_s).year
+  archived = current_year - publish_year
+  archived > 10
+end
+
   
 
   # def can_be_archived?
