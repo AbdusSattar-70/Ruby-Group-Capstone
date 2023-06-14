@@ -30,7 +30,7 @@
 
 # 📖 [Ruby-Group-Capstone] <a name="about-project"></a>
 
-> ## The **Ruby-Group-Capstone** project consists of three classes: Person, Student, and Teacher. The Person class has attributes for identification, name, and age, along with getters and setters. It also has a method to check if a person is of age or has parental permission.The Student class inherits from Person and adds a classroom attribute. It includes a method called play_hooky to represent skipping class.The Teacher class also inherits from Person and includes a specialization attribute. It overrides the can_use_services. method to always return true.Each class is saved in a separate file for better organization. The project provides a foundation for a library management system in a school environment.
+> ## The **Ruby-Group-Capstone** project 'The Catalog of My Things' app is a Ruby-based solution for managing and organizing your collection of books, games, and music albums. It allows you to add new items, explore your collection by labels, genres, and authors, and provides a user-friendly interface for easy navigation. It's a convenient tool to keep track of your personal inventory of books, games, and music albums.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -63,6 +63,9 @@
 
 - Simple command-line interface.
 - Support for IRB input formats.
+- Add Book, Author, Game, MusicAlbum and Genre
+- List all Books, Games, Authors, Music Albums, Genres and Labels.
+- Store data in json file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
