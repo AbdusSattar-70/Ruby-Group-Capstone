@@ -35,7 +35,6 @@ RSpec.describe GameAuthorAddAndShow do
                                                                                        'publish_date' => '2023-06-14' }
                                                                                    ])
 
-      # Stub the display_message method to capture the output
       output = ''
       allow(game_author).to receive(:display_message) { |message| output << message << "\n" }
 
