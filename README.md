@@ -13,17 +13,20 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+- [🚀 Video Presentation ](#video-project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -69,6 +72,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+💻 Video Presentation <a name="video-project-presentation"></a>
+
+- [Video link](address/)
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -113,10 +120,16 @@ Navigate to the directory where the Ruby file is stored using the cd command.
 Type the following command to run the Ruby file:
 
 ```sh
-ruby filename.rb
+ruby main.rb
 ```
 
 ### - where filename.rb is the name of the Ruby file you want to run.
+
+## Run tests
+
+```sh
+rspec spec/filename.rb
+```
 
 <!-- AUTHORS -->
 
@@ -146,10 +159,9 @@ ruby filename.rb
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Project 4: add basic UI.
-- [ ] Project 5: refactor the code.
-- [ ] Project 6: preserve data.
-- [ ] Project 7: unit tests.
+- [ ] Add movie
+- [ ] Add list all movies feature
+- [ ] Add remove functionalities for all items
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +187,7 @@ Feel free to check the [issues page](https://github.com/AbdusSattar-70/Ruby-Grou
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> We would like to thank the [Microverse team](https://www.microverse.org/) for allowing us to work on this Morse Code Decoder ruby project.
+> We would like to thank the [Microverse team](https://www.microverse.org/) for allowing us to work on this Catalog of my things ruby project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
