@@ -8,7 +8,7 @@ RSpec.describe GameAuthorAddAndShow do
   describe '#add_game' do
     it 'adds a game and author to the lists' do
       allow(game_author).to receive(:gets).and_return(
-        '2023-06-14', '2', '2023-06-14', 'John', 'Doe'
+        '2023-06-14', '2', '2023-06-14', 'Igbo', 'David'
       )
       game_author.add_game
 
@@ -17,8 +17,8 @@ RSpec.describe GameAuthorAddAndShow do
       expect(game_author.games[0].multiplayer).to eq('2')
 
       expect(game_author.authors.length).to eq(1)
-      expect(game_author.authors[0].first_name).to eq('John')
-      expect(game_author.authors[0].last_name).to eq('Doe')
+      expect(game_author.authors[0].first_name).to eq('Igbo')
+      expect(game_author.authors[0].last_name).to eq('David')
     end
   end
 
