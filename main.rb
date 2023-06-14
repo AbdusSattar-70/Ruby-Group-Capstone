@@ -17,7 +17,6 @@ class Main
   def initialize
     puts 'Welcome to Catalog App'
     puts @line = '********************************************'
-
   end
 
   def select_menu
