@@ -15,10 +15,6 @@ class App
       @list_all_book_and_label.list_all_labels
     when '3'
       @list_all_game_and_author.list_all_games
-    when '4'
-      @list_all_game_and_author.list_all_authors
-    when '5'
-      @list_all_book_and_label.list_all_music_albums
     when '6'
       @list_all_game_and_author.list_all_authors
     end
