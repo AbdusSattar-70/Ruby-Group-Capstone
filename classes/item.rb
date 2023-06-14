@@ -31,13 +31,11 @@ class Item
   private
 
   def can_be_archived?
-  current_year = Time.now.year
-  publish_year = Date.parse(@publish_date.to_s).year
-  archived = current_year - publish_year
-  archived > 10
-end
-
-  
+    current_year = Time.now.year
+    publish_year = Date.parse(@publish_date.to_s).year
+    archived = current_year - publish_year
+    archived > 10
+  end
 
   # def can_be_archived?
   #   current_year = Time.now.year

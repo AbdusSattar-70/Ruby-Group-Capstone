@@ -26,7 +26,9 @@ RSpec.describe GameAuthorAddAndShow do
     it 'displays information about all games' do
       game_author.add_game
 
-      expect { game_author.list_all_games }.to output(/game: \d{4}-\d{2}-\d{2}, multiplayer: \d, publish Date: \d{4}-\d{2}-\d{2}/).to_stdout
+      expect do
+        game_author.list_all_games
+      end.to output(/game: \d{4}-\d{2}-\d{2}, multiplayer: \d, publish Date: \d{4}-\d{2}-\d{2}/).to_stdout
     end
   end
 

@@ -95,6 +95,5 @@ class GameAuthorAddAndShow
     puts '********************************************'
     puts message
     puts '********************************************'
-
   end
 end

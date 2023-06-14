@@ -8,9 +8,9 @@ RSpec.describe Author do
 
   describe '#add_item' do
     it 'adds an item to the author' do
-      expect {
+      expect do
         author.add_item(item)
-      }.to change { author.items.count }.by(1)
+      end.to change { author.items.count }.by(1)
 
       expect(author.items).to include(item)
       expect(item.author).to eq(author)
