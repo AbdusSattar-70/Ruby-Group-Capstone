@@ -27,13 +27,13 @@ class Item
   def move_to_archive
     @archived = can_be_archived?
   end
-end
 
-private
+  private
 
-def can_be_archived?
-  current_year = Time.now.year
-  publish_year = Date.parse(@publish_date).year
-  archived = current_year - publish_year
-  archived > 10
+  def can_be_archived?
+    current_year = Time.now.year
+    publish_year = Date.parse(@publish_date).year
+    archived = current_year - publish_year
+    archived > 10
+  end
 end
