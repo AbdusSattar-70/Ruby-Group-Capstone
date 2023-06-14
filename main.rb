@@ -16,12 +16,13 @@ class Main
 
   def initialize
     puts 'Welcome to Catalog App'
-    puts '********************************************'
+    puts @line = '********************************************'
+
   end
 
   def select_menu
     puts 'Please choose an option by entering a number:'
-    puts '********************************************'
+    puts @line
 
     MENU_OPTIONS.each_with_index do |option, index|
       puts "#{index + 1}) #{option}"
@@ -35,10 +36,9 @@ class Main
       option = gets.chomp
 
       if option == MENU_OPTIONS.length.to_s
-        puts '********************************************'
+        puts @line
         puts 'Thank you for using our Catalog App!!! '
-        puts '********************************************'
-
+        puts @line
         break
       else
         app.select_option(option)
