@@ -3,7 +3,6 @@ require_relative 'author'
 require 'json'
 require 'date'
 require 'fileutils'
-require 'pry'
 
 class GameAuthorAddAndShow
   attr_accessor :games, :authors
@@ -78,15 +77,15 @@ class GameAuthorAddAndShow
   def list_all_games
     @games = load_json('data/games.json')
     @games.each do |game|
-      display_message("game: #{game[:last_played_at]}, multiplayer: #{game[:multiplayer]},
-         publish Date: #{game[:publish_date]}")
+      display_message("game: #{game['last_played_at']}, multiplayer: #{game['multiplayer']},
+         publish Date: #{game['publish_date']}")
     end
   end
 
   def list_all_authors
     @authors = load_json('data/authors.json')
     @authors.each do |author|
-      display_message("author: #{author[:first_name]}, #{author[:last_name]}")
+      display_message("author: #{author['first_name']} #{author['last_name']}")
     end
   end
 
