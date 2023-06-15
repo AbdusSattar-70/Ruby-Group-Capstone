@@ -74,7 +74,7 @@
 
 💻 Video Presentation <a name="video-project-presentation"></a>
 
-- [Video link](address/)
+- [Video link](https://drive.google.com/file/d/1864ncBuRg6D6Fq-IZyigVVpF-whPfKD9/view?usp=sharing)
 
 <!-- GETTING STARTED -->
 
