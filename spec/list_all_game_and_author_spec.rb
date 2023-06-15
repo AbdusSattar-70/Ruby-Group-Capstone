@@ -5,8 +5,8 @@ require_relative '../classes/list_all_game_and_author'
 RSpec.describe GameAuthorAddAndShow do
   let(:game_author) { GameAuthorAddAndShow.new }
   after(:all) do
-    File.delete('data/games.json') if File.exist?('data/games.json')
-    File.delete('data/authors.json') if File.exist?('data/authors.json')
+    FileUtils.rm_f('data/games.json')
+    FileUtils.rm_f('data/authors.json')
   end
 
   describe '#add_game' do
