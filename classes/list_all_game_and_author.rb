@@ -92,8 +92,8 @@ class GameAuthorAddAndShow
   private
 
   def display_message(message)
-    puts '-------------------------------------------'
+    puts '********************************************'
     puts message
-    puts '-------------------------------------------'
+    puts '********************************************'
   end
 end

@@ -12,9 +12,9 @@ class Game < Item
   private
 
   def can_be_archived?
-    return false unless super
-
-    last_played_years = (Time.now - @last_played_at).to_i / (365 * 24 * 60 * 60)
-    last_played_years > 2
+    last_played_year = @last_played_at.year
+    current_year = Time.now.year
+    years_since_last_played = current_year - last_played_year
+    years_since_last_played > 2
   end
 end
